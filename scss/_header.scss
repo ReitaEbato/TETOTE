@@ -1,0 +1,191 @@
+@use '_mixin.scss' as *;
+@use '_variable.scss' as *;
+
+/* .header
+***************************************************************/
+
+.header {
+    padding: 1.62rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 11;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 1.88rem;
+    position: relative;
+    max-width: 86.24rem;
+
+    @include min(common) {
+        margin: 0 auto;
+    }
+}
+
+.logo {
+    display: flex;
+}
+
+.header__wrapper {
+    display: flex;
+
+    .hamburger-btn {
+        margin-left: 2.5rem;
+    }
+}
+
+.header-btn__wrap {
+    display: flex;
+    align-items: center;
+}
+
+.header-btn {
+    margin-left: 1.38rem;
+    vertical-align: top;
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.details-btn__link {
+    display: inline-block;
+    font-family: $font-main;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: $color-white;
+    line-height: 1;
+    background-color: $color-black;
+    padding: 0.88rem 2.19rem;
+}
+
+.entry-btn__link {
+    display: inline-block;
+    font-family: $font-sub1;
+    font-size: 0.875rem;
+    color: $color-white;
+    line-height: 1;
+    background-color: $color-main;
+    padding: 0.88rem 2.56rem;
+}
+
+.hamburger-btn {
+    display: inline-block;
+    font-size: 0.75rem;
+    width: 3.25rem;
+    height: 3.25rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.hamburger-btn__line {
+    display: block;
+    background-color: $color-white;
+    width: 3.25rem;
+    height: 0.125rem;
+    position: absolute;
+    top: 1.255rem;
+    right: 0;
+    transition: inherit;
+
+    &::before {
+        content: '';
+        display: block;
+        background-color: inherit;
+        position: absolute;
+        top: -0.94rem;
+        width: inherit;
+        height: inherit;
+        transition: inherit;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        background-color: inherit;
+        position: absolute;
+        top: 0.94rem;
+        width: inherit;
+        height: inherit;
+        transition: inherit;
+    }
+}
+
+.hamburger-btn__text {
+    color: $color-white;
+    font-size: 0.75rem;
+    line-height: 1;
+    position: absolute;
+    top: 2.875rem;
+    right: 0.56rem;
+}
+
+.global-menu {
+    position: fixed;
+    background-color: $color-main-light;
+    width: 100%;
+    height: 100vh;
+    visibility: hidden;
+    z-index: 1;
+}
+
+/* アニメーション
+***************************************************************/
+
+.is-drawerActive .header {
+    background-color: transparent;
+}
+
+.hamburger-btn[aria-expanded="true"] {
+
+    .hamburger-btn__line {
+        background-color: transparent;
+
+        &::before {
+            top: 0;
+            transform: rotate(45deg);
+            background-color: $color-black;
+        }
+
+        &::after {
+            top: 0;
+            transform: rotate(-45deg);
+            background-color: $color-black;
+        }
+    }
+
+    .hamburger-btn__text {
+        color: $color-black;
+    }
+}
+
+.js-header-scroll {
+    background-color: $color-white;
+    transition: 0.2s ease-out;
+
+    .logo__img-path {
+        fill: $color-black;
+    }
+
+    .hamburger-btn__line {
+        background-color: $color-black;
+
+        &::before {
+            background-color: $color-black;
+        }
+
+        &::after {
+            background-color: $color-black;
+        }
+    }
+
+    .hamburger-btn__text {
+        color: $color-black;
+    }
+}
+
+.js-logo-color {
+    fill: $color-black;
+}

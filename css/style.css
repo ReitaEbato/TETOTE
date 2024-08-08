@@ -1,0 +1,384 @@
+@charset "UTF-8";
+/* color
+****************************************************************/
+/*
+$color-main-dark: ;
+$color-sub: ;
+$color-sub-light: ;*/
+/*
+$color-dark: ;
+$color-light: ;*/
+/* font
+***************************************************************/
+/* 共通
+***************************************************************/
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* fv
+***************************************************************/
+.fv {
+  background-image: url(../img/layout/top-page/fv01.jpg);
+  background-size: cover;
+}
+
+.fv__inner {
+  padding-bottom: 2.38rem;
+}
+
+.fv__level2-heading {
+  color: #fff;
+  font-family: "Viga", sans-serif;
+  font-size: 6rem;
+  font-weight: 400;
+  line-height: 1.2;
+  padding: 17.88rem 0 0 4.12rem;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.fv__level3-heading {
+  display: inline-block;
+  color: #fff;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 1.06rem 4.12rem;
+  margin-top: 5.38rem;
+  background-color: #222;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 94% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 94% 100%, 0% 100%);
+}
+
+.news-widget {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #222;
+  border-radius: 3.13rem;
+  margin-top: 3.94rem;
+  margin-left: 4.5rem;
+  max-width: 78.9375rem;
+}
+
+.news-widget__level3-heading {
+  display: inline-block;
+  color: #fff;
+  font-family: "Viga", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1;
+  background-color: #222;
+  padding: 1.1275rem 3.69rem 1.1275rem 3.6875rem;
+  border-radius: 3.13rem 0 0 3.13rem;
+}
+
+.news-widget__text {
+  color: #222;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 1.375rem 0 1.375rem 5.5575rem;
+}
+
+.news-widget__link {
+  color: #222;
+  font-family: "Viga", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1;
+  margin: 1.375rem 2.94rem 1.375rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.news-widget__link-img {
+  margin-left: 0.38rem;
+  width: 0.625rem;
+  aspect-ratio: 1/1;
+}
+
+/* mission
+***************************************************************/
+.mission {
+  position: relative;
+}
+
+.mission__inner {
+  padding: 6.31rem;
+}
+
+.mission__level2-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #222;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  position: absolute;
+  top: 23.12rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1;
+}
+
+.mission__level2-heading-span {
+  display: block;
+  background-color: #fff;
+  padding: 0.44rem 0.69rem;
+  margin: 0.44rem auto 0;
+}
+.mission__level2-heading-span:first-child {
+  margin-top: 0;
+}
+
+.mission__slide-item {
+  margin-left: 2.12rem;
+}
+.mission__slide-item:nth-child(even) {
+  margin-top: 2.25rem;
+}
+
+.mission__slide-img {
+  aspect-ratio: 31.625/24.5625;
+  border-radius: 3.75rem;
+  width: 31.625rem;
+}
+
+.mission__level3-heading-wrap {
+  background-image: url(../img/layout/top-page/map1.png);
+  background-size: cover;
+  margin-top: 6.25rem;
+}
+
+.mission__level3-heading {
+  color: #222;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.8;
+  margin-top: 3.25rem;
+}
+.mission__level3-heading:first-child {
+  margin-top: 0;
+}
+
+/* .header
+***************************************************************/
+.header {
+  padding: 1.62rem 0;
+  position: fixed;
+  width: 100%;
+  z-index: 11;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 1.88rem;
+  position: relative;
+  max-width: 86.24rem;
+}
+@media (width >= 1440px) {
+  .header__inner {
+    margin: 0 auto;
+  }
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__wrapper .hamburger-btn {
+  margin-left: 2.5rem;
+}
+
+.header-btn__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-btn {
+  margin-left: 1.38rem;
+  vertical-align: top;
+}
+.header-btn:first-child {
+  margin-left: 0;
+}
+
+.details-btn__link {
+  display: inline-block;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+  background-color: #222;
+  padding: 0.88rem 2.19rem;
+}
+
+.entry-btn__link {
+  display: inline-block;
+  font-family: "Viga", sans-serif;
+  font-size: 0.875rem;
+  color: #fff;
+  line-height: 1;
+  background-color: #AFA86F;
+  padding: 0.88rem 2.56rem;
+}
+
+.hamburger-btn {
+  display: inline-block;
+  font-size: 0.75rem;
+  width: 3.25rem;
+  height: 3.25rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.hamburger-btn__line {
+  display: block;
+  background-color: #fff;
+  width: 3.25rem;
+  height: 0.125rem;
+  position: absolute;
+  top: 1.255rem;
+  right: 0;
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+.hamburger-btn__line::before {
+  content: "";
+  display: block;
+  background-color: inherit;
+  position: absolute;
+  top: -0.94rem;
+  width: inherit;
+  height: inherit;
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+.hamburger-btn__line::after {
+  content: "";
+  display: block;
+  background-color: inherit;
+  position: absolute;
+  top: 0.94rem;
+  width: inherit;
+  height: inherit;
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+
+.hamburger-btn__text {
+  color: #fff;
+  font-size: 0.75rem;
+  line-height: 1;
+  position: absolute;
+  top: 2.875rem;
+  right: 0.56rem;
+}
+
+.global-menu {
+  position: fixed;
+  background-color: #FAF7F1;
+  width: 100%;
+  height: 100vh;
+  visibility: hidden;
+  z-index: 1;
+}
+
+/* アニメーション
+***************************************************************/
+.is-drawerActive .header {
+  background-color: transparent;
+}
+
+.hamburger-btn[aria-expanded=true] .hamburger-btn__line {
+  background-color: transparent;
+}
+.hamburger-btn[aria-expanded=true] .hamburger-btn__line::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #222;
+}
+.hamburger-btn[aria-expanded=true] .hamburger-btn__line::after {
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background-color: #222;
+}
+.hamburger-btn[aria-expanded=true] .hamburger-btn__text {
+  color: #222;
+}
+
+.js-header-scroll {
+  background-color: #fff;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+.js-header-scroll .logo__img-path {
+  fill: #222;
+}
+.js-header-scroll .hamburger-btn__line {
+  background-color: #222;
+}
+.js-header-scroll .hamburger-btn__line::before {
+  background-color: #222;
+}
+.js-header-scroll .hamburger-btn__line::after {
+  background-color: #222;
+}
+.js-header-scroll .hamburger-btn__text {
+  color: #222;
+}
+
+.js-logo-color {
+  fill: #222;
+}
