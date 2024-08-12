@@ -15,8 +15,7 @@
     padding-bottom: 2.38rem;
 }
 
-.fv__bg01 {
-    
+.fv__bg01 {   
 }
 
 .fv__level2-heading {
@@ -92,10 +91,11 @@
 
 .mission {
     position: relative;
+    text-align: center;
+    padding: 6.31rem 0 4.75rem;
 }
 
 .mission__inner {
-    padding: 6.31rem;
 }
 
 .mission__level2-heading {
@@ -125,15 +125,26 @@
 }
 
 .mission__slide-list {
-    // margin-top: 6.31rem;
+}
+
+.mission__slide-list [data-slick-index="1"] {
+    margin-top: 2.25em;
+}
+
+.mission__slide-list [data-slick-index="3"] {
+    margin-top: 2.25em;
+}
+
+.mission__slide-list [data-slick-index="5"] {
+    margin-top: 2.25em;
+}
+
+.mission__slide-list [data-slick-index="7"] {
+    margin-top: 2.25em;
 }
 
 .mission__slide-item {
     margin-left: 2.12rem;
-
-    &:nth-child(even) {
-        margin-top: 2.25rem;
-    }
 }
 
 .mission__slide-img {
@@ -144,17 +155,22 @@
 
 .mission__level3-heading-wrap {
     background-image: url(../img/layout/top-page/map1.png);
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
+    padding-bottom: 2.88rem;
     margin-top: 6.25rem;
 }
 
 .mission__level3-heading {
     color: $color-black;
-    text-align: center;
-    font-family: $font-sub2;
     font-size: 2.25rem;
+    font-family: $font-main;
     font-weight: 700;
     line-height: 1.8;
+}
+
+.mission__level3-heading-span {
+    display: block;
     margin-top: 3.25rem;
 
     &:first-child {
@@ -162,12 +178,59 @@
     }
 }
 
-.mission__level3-heading-span {
+// .view-more-btn {
+//     display: inline-block;
+//     background-color: $color-white;
+//     border: 1px solid $color-black;
+// }
+
+// .mission__btn {
+//     margin-top: 3.25rem;
+// }
+
+// .view-more-btn__link {
+//     display: flex;
+//     align-items: center;
+//     color: $color-black;
+//     font-family: $font-sub1;
+//     font-size: 1.25rem;
+//     line-height: 1;
+//     padding: 1.88rem 1.25rem 1.88rem 7.75rem;
+// }
+
+// .view-more-btn__link-text {
+//     line-height: 1;
+//     font-size: 1.25rem;
+// }
+
+// .view-more-btn__img {
+//     aspect-ratio: 1/1;
+//     margin-left: 5.25rem;
+//     width: 1.25rem;
+// }
+
+.view-more-btn {
+    background-color: $color-white;
+    border: 1px solid $color-black;
+    padding: 1.88rem 1.25rem 1.88rem 7.75rem;// 1.8175rem 1.1875rem 1.8175rem 7.6875rem
 }
 
 .mission__btn {
+    display: inline-flex;
+    margin-top: 0.38rem;
+    color: $color-black;
+    font-family: $font-sub1;
+    font-size: 1.25rem;
+    line-height: 1;
 }
 
-.mission__btn-link {
+.view-more-btn__text {
+    display: inline;
+    vertical-align: middle;
+}
+
+.view-more-btn__img {
+    margin-left: 5.25rem;
+    width: 1.25rem;
 }
 

@@ -118,10 +118,8 @@ li {
 ***************************************************************/
 .mission {
   position: relative;
-}
-
-.mission__inner {
-  padding: 6.31rem;
+  text-align: center;
+  padding: 6.31rem 0 4.75rem;
 }
 
 .mission__level2-heading {
@@ -157,11 +155,24 @@ li {
   margin-top: 0;
 }
 
+.mission__slide-list [data-slick-index="1"] {
+  margin-top: 2.25em;
+}
+
+.mission__slide-list [data-slick-index="3"] {
+  margin-top: 2.25em;
+}
+
+.mission__slide-list [data-slick-index="5"] {
+  margin-top: 2.25em;
+}
+
+.mission__slide-list [data-slick-index="7"] {
+  margin-top: 2.25em;
+}
+
 .mission__slide-item {
   margin-left: 2.12rem;
-}
-.mission__slide-item:nth-child(even) {
-  margin-top: 2.25rem;
 }
 
 .mission__slide-img {
@@ -172,21 +183,53 @@ li {
 
 .mission__level3-heading-wrap {
   background-image: url(../img/layout/top-page/map1.png);
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
+  padding-bottom: 2.88rem;
   margin-top: 6.25rem;
 }
 
 .mission__level3-heading {
   color: #222;
-  text-align: center;
-  font-family: "Inter", sans-serif;
   font-size: 2.25rem;
+  font-family: "Noto Sans JP", sans-serif;
   font-weight: 700;
   line-height: 1.8;
+}
+
+.mission__level3-heading-span {
+  display: block;
   margin-top: 3.25rem;
 }
-.mission__level3-heading:first-child {
+.mission__level3-heading-span:first-child {
   margin-top: 0;
+}
+
+.view-more-btn {
+  background-color: #fff;
+  border: 1px solid #222;
+  padding: 1.88rem 1.25rem 1.88rem 7.75rem;
+}
+
+.mission__btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-top: 0.38rem;
+  color: #222;
+  font-family: "Viga", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.view-more-btn__text {
+  display: inline;
+  vertical-align: middle;
+}
+
+.view-more-btn__img {
+  margin-left: 5.25rem;
+  width: 1.25rem;
 }
 
 /* .header
@@ -317,6 +360,7 @@ li {
 
 .hamburger-btn__text {
   color: #fff;
+  font-family: "Viga", sans-serif;
   font-size: 0.75rem;
   line-height: 1;
   position: absolute;
