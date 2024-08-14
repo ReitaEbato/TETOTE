@@ -36,18 +36,41 @@ $(function () {
     });
 
     //missionセクション 無限スクロール
-    var slideNum = $(".mission__slide-list li").length;
-    var thumbNum = slideNum - 1;
+    var missionSlideNum = $(".mission__slide-list li").length;
+    var missionThumbNum = missionSlideNum - 1;
 
     $(".mission__slide-list").slick({
         autoplay: true,
         autoplaySpeed: 0,
         speed: 5000,
         cssEase: 'linear',
-        slidesToShow: thumbNum,
+        slidesToShow: missionThumbNum,
         pauseOnFocus: false,
         pauseOnHover: false,
         arrows: false,
         variableWidth: true,
+    });
+
+    //memberセクション 無限スクロール
+    var memberSlideNum = $(".member__slide-list li").length;
+    var memberThumbNum = memberSlideNum - 1;
+
+    $(".member__slide-list").slick({
+        // autoplay: true,
+        // autoplaySpeed: 0,
+        // speed: 5000,
+        // cssEase: 'linear',
+        // slidesToShow: thumbNum,
+        // pauseOnFocus: false,
+        // pauseOnHover: false,
+        // arrows: false,
+        variableWidth: true,
+
+        infinite: false,
+    //     arrows: true,
+        prevArrow: '<button class="member__slide-btn member__prev-btn"></button>',
+        nextArrow: '<button class="member__slide-btn member__next-btn"></button>',
+        slidesToShow: memberThumbNum,
+        slidesToScroll: 1,
     });
 })
